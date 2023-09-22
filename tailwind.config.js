@@ -8,11 +8,21 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage: {
-        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-        'gradient-conic':
-          'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
+        'hero-pattern': "url('/Hero-Pattern.png')"
       },
+      backgroundColor: {
+        'hero-pattern': "rgba(194, 218, 251, 0.90)"
+      },
+      borderRadius: {
+        "curved": "0px 35px 35px 35px"
+      },
+      colors: {
+        primary: { DEFAULT: "#1F64FF", HOVER: "#000" },
+        secondary: "#FFFFFF",
+        neutral: "rgba(0, 0, 34, 0.50)",
+        accent: "#FFC000",
+      }
     },
   },
-  plugins: [],
+  plugins: [require("daisyui")],
 }
