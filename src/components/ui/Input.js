@@ -4,7 +4,7 @@ const Input = ({type, placeholder,style}) => {
   return (
     <div>
         <input type={type} placeholder={placeholder} 
-            className={`mb-2 input input-ghost focus:input-ghost input-bordered w-full max-w-md text-neutral border-transparent focus:border-transparent focus:ring-0 ${style}`}
+            className={`mb-2 input bg-transparent input-bordered w-full max-w-md text-neutral border-2${style}`}
         />
     </div>
   )
