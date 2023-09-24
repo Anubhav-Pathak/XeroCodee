@@ -17,12 +17,20 @@ module.exports = {
         "curved": "0px 35px 35px 35px"
       },
       colors: {
-        primary: { DEFAULT: "#1F64FF", HOVER: "#000" },
-        secondary: "#FFFFFF",
-        neutral: "rgba(0, 0, 34, 0.50)",
-        accent: "#FFC000",
+        black: "#000000",
+        gray: "rgba(0, 0, 34, 0.50)"
       }
     },
   },
   plugins: [require("daisyui")],
+  daisyui: {
+    themes: [
+      {
+        "light": {
+          primary: "#1F64FF",
+          secondary: "#FFFFFF",
+        }
+      }
+    ]
+  }
 }
